@@ -10,6 +10,6 @@ const boxPlotController = new BoxPlotController(fakeService);
 
 const boxPlotHandler = new BoxPlotHandler(boxPlotController)
 
-router.get('/', boxPlotHandler.getDatos.bind(BoxPlotHandler));
+router.get('/', boxPlotHandler.getDatos.bind(boxPlotHandler));
 
 export default router;

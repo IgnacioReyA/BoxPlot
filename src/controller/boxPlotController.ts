@@ -9,8 +9,7 @@ export class BoxPlotController {
         this.dbService = dbService;
     }
 
-    async getDatos(datos: number[]): Promise<BoxPlot[]>{
-        const boxPlot = this.dbService.getDatos(datos)
-        return boxPlot
+    async getDatos(): Promise<BoxPlot[]>{
+        return this.dbService.getDatos();
     }
 }
